@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/* 1. FONT: Poppins (Tüm kalınlıklar) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 2. TEMA AYARLARI */
+@theme {
+  --color-primary: #2563EB;
+}
+
+/* 3. DARK MODE AYARI */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 4. GENEL SAYFA AYARLARI */
+body {
+  font-family: 'Poppins', sans-serif;
+  @apply bg-[#F8F9FA] text-gray-900;
+  
+  /* Yatay kaydırmayı engelle */
+  overflow-x: hidden; 
+  
+  /* Yumuşak renk geçişi (Sadece body için, performans dostu) */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Karanlık Modda Body */
+html.dark body {
+  @apply bg-[#0F172A] text-gray-100;
+}
+
+/* 5. ÖZEL SCROLLBAR TASARIMI */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-700 rounded-full;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-600;
+}
+
+/* 6. ÖZEL ANİMASYONLAR (Kasma Yapmayan GPU Destekli) */
+
+/* Yukarı Aşağı Süzülme (Hero Kartı İçin) */
+@keyframes smooth-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-smooth-float {
+  animation: smooth-float 6s ease-in-out infinite;
+  will-change: transform; /* GPU'yu zorla kullanır, kasmaz */
+}
+
+/* Biraz daha hızlı versiyon (Yan kartlar için) */
+.animate-smooth-float-fast {
+  animation: smooth-float 4s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Ters yöne hareket eden versiyon */
+.animate-smooth-float-reverse {
+  animation: smooth-float 5s ease-in-out infinite reverse;
+  will-change: transform;
+}
+
+/* Yavaş dönme efekti (Arka plan için opsiyonel) */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  animation: spin-slow 25s linear infinite reverse;
+}
