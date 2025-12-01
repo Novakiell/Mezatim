@@ -25,13 +25,21 @@ This project combines the logic of traditional e-commerce with real-time interac
 
 • **Live Chat Module:** Real-time messaging between buyer and seller for each product. <br>
 • **User Interaction:** Add to favorites, rate seller, and leave a review. <br>
+
+<img width="1908" height="782" alt="8mnx7t7" src="https://github.com/user-attachments/assets/e175618b-3deb-41ec-999b-73ba2eb59a33" />
+
 • **Admin Dashboard:** View platform statistics, manage users, and remove inappropriate listings. <br>
+
+<img width="1918" height="650" alt="ojm4k4c" src="https://github.com/user-attachments/assets/9a719986-f453-407f-8611-c425e3096c10" />
+
 • **Responsive Design:** Mobile-optimized UI and PWA (Progressive Web App) support. <br>
 • **Dark Mode Support:** Light and dark theme options working consistently across the system.
 
 <img width="1910" height="795" alt="ahqv99y" src="https://github.com/user-attachments/assets/9105d595-5159-49f8-b33b-fa8c6d3bd99d" />
 
 <img width="1910" height="795" alt="m9c4n3q" src="https://github.com/user-attachments/assets/6675f843-b487-476e-b81a-5c412358f6a5" />
+
+
 
 
 ---
