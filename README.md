@@ -125,9 +125,5 @@ If you wish to contribute to the project, please create a **Fork**, then submit 
 
 ---
 
-**Developer:** *[Your Name]*
-**Contact:** *[Email Address or LinkedIn Profile]*
-
----
-
-If you want, I can also convert this into a professional **README.md** file format for GitHub. 🚀
+**Developer:** *Furkan Şeremet* <br>
+**Contact:** *([LinkedIn](https://tr.linkedin.com/in/furkanseremet))*
